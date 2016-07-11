@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tabs Plugin</title>
+        <style>
+            .hidden {
+                display: none;
+            }
+            .tabs-design {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                z-index: 10;
+                margin-bottom: -1px;
+            }
+            .tabs-design li {
+                float: left;
+                margin-right: 10px;
+            }
+            .tabs-design li a {
+                border: 1px solid #ccc;
+                padding: 10px;
+                display: block;
+                position: relative;
+                background-color: #ccc;
+            }
+            .tabs-design li a.active {
+                border-bottom: white;
+                top: 2px;
+                background-color: white;   
+            }
+            .tab-content {
+                background-color: #FFFFFF;
+                border: 1px solid #ccc;
+                padding: 10px;
+                z-index: 10;
+            }
+        </style>
+    </head>
+    <body>
+
+    	<h1>A simple tab script</h1>
+
+
+
+        <div id="tabs-wrapper">
+
+        	<ul id="table-of-content">
+        		<li><a href="#overview">Overview</a></li>
+        		<li><a href="#content-structure">Content and structure</a></li>
+        		<li><a href="#teaching">Teaching and Assessment</a></li>
+        	</ul>
+
+        	
+        	<div class="tab-content">
+        		<h2 id="overview" class="tab-header">Overview</h2>
+    	    	<p>Civil engineers design, construct, manage and improve our environment. They develop our infrastructure and have a profound effect on the way we live through consideration of function, aesthetics, economics and sustainability.</p>
+    	    </div>
+
+        	
+        	<div class="tab-content">
+        		<h2 id="content-structure" class="tab-header">Content and structure</h2>
+        		<p>The course provides advanced theoretical knowledge in the key subjects of analytical methods, structural, geotechnical and hydraulic engineering. Management studies and design are also integral parts of the course from the first year through to the final year. The main focus of the final year is an extensive integrated design project in association with leading engineers from industry, to research and develop a design solution for a real and current project.</p>
+
+    			<p>The course is taught using a combination of lectures, coursework and projects. Much of the coursework is related to laboratory experiments. Project work is extensively supported by industry to provide insight into the demands of civil engineering practice.</p>
+    		</div>
+
+    		
+    		<div class="tab-content">
+    			<h2 id="teaching" class="tab-header">Teaching and Assessment</h2>
+    			<p>You will be taught by a combination of lectures, coursework and projects, many of which feature contributions from practicing engineers. There are also skills based modules designed to improve your graphical, oral and IT communication skills. There are two residential field courses in geology and surveying.</p>
+    		</div>
+        
+        </div>
+
+   		<script src="tabs.js"></script>
+    </body>
+</html>
